@@ -72,7 +72,6 @@ const videoSources = [
     "photos/inicio/IMG_5797.mp4",
     "photos/inicio/MacBook Ventiladores.mp4",
     "photos/inicio/Ben&Jerry2.mp4",
-    "photos/inicio/copy_1D45F435-81F8-4411-910B-BCD78D82F3F4.mp4"
 ];
 
 let currentVideoIndex = 0;

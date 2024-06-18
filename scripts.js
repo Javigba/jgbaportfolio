@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const videoSources = [
-    "photos/kicklouder/fb36be80-9916-48c9-8aeb-8d1d257ebd97.JPG",
     "/photos/inicio/IMG_5797.mp4",
     "/photos/inicio/MacBook Ventiladores.mp4",
     "/photos/inicio/Ben&Jerry2.mp4",

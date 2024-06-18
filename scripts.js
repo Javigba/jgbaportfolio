@@ -86,5 +86,3 @@ if (videoElement) {
         videoElement.play();
     });
 }
-
-

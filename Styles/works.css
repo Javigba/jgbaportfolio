@@ -1,0 +1,171 @@
+/* Ajustes para la imagen de fondo */
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo del contenido de los trabajos */
+.works-page .works-content {
+    font-family: 'Mittleschrift', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 210px;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mayor legibilidad */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.works-title {
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.project span {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Estilo del footer específico para about.html */
+/* Estilo del footer */
+footer {
+    font-family: 'Mittleschrift', sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
+    align-items: center; /* Alinea el contenido en el centro */
+    width: 100%; /* Asegura que ocupe todo el ancho del footer */
+}
+
+footer span {
+    font-weight: bold;
+    margin-top: 10px; /* Añadir espacio entre el icono y el texto */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #888;
+}
+
+
+/* Estilos adicionales para la versión de escritorio (opcional) */
+@media (max-width: 769px) {
+    /* Estilo del footer */
+footer {
+    font-family: 'Mittleschrift', sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
+    align-items: center; /* Alinea el contenido en el centro */
+    width: 100%; /* Asegura que ocupe todo el ancho del footer */
+}
+
+footer span {
+    font-weight: bold;
+    margin-top: 10px; /* Añadir espacio entre el icono y el texto */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #888;
+}
+}

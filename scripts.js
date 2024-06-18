@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
         
-        // Cambiar el botón de scroll según la posición de scroll
         const scrollDownBtn = document.getElementById('scrollDownBtn');
         if (window.scrollY > 100) {
             scrollDownBtn.classList.add('up');
@@ -27,15 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const nav = document.querySelector('nav');
         
         if (!nav.classList.contains('menu-open')) {
-            navLinks.style.display = 'block'; // Aseguramos que el display sea block antes de la animación
+            navLinks.style.display = 'block';
             setTimeout(() => {
                 nav.classList.add('menu-open');
-            }, 10); // Un pequeño retraso para asegurar que el cambio de display ocurra antes de la animación
+            }, 10);
         } else {
             nav.classList.remove('menu-open');
             navLinks.addEventListener('transitionend', function() {
                 navLinks.style.display = 'none';
-            }, { once: true }); // Cambiar a none después de la animación
+            }, { once: true });
         }
     });
 
@@ -45,20 +44,18 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.remove('menu-open');
         navLinks.addEventListener('transitionend', function() {
             navLinks.style.display = 'none';
-        }, { once: true }); // Cambiar a none después de la animación
+        }, { once: true });
     });
 
-    // Actualizar el año en el pie de página
     const yearSpan = document.getElementById('year');
     yearSpan.textContent = new Date().getFullYear();
 
-    // Manejar el botón Scroll Down
     const scrollDownBtn = document.getElementById('scrollDownBtn');
 
     scrollDownBtn.addEventListener('click', function() {
         if (!scrollDownBtn.classList.contains('up')) {
             const aboutContent = document.getElementById('aboutContent');
-            const offset = 100; // Ajusta este valor según sea necesario
+            const offset = 100;
             const yPosition = aboutContent.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: yPosition, behavior: 'smooth' });
             scrollDownBtn.classList.add('up');
@@ -76,7 +73,6 @@ const videoSources = [
     "photos/inicio/MacBook Ventiladores.mp4",
     "photos/inicio/Ben&Jerry2.mp4",
     "photos/inicio/copy_1D45F435-81F8-4411-910B-BCD78D82F3F4.mp4"
-    // Puedes añadir más rutas de video aquí
 ];
 
 let currentVideoIndex = 0;

@@ -88,3 +88,4 @@ videoElement.addEventListener('ended', () => {
     videoElement.src = videoSources[currentVideoIndex];
     videoElement.play();
 });
+

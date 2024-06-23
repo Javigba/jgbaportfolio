@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const videoSources = [
-    "/photos/inicio/new.mp4"
+    "photos/inicio/new.mp4"
     //"/photos/inicio/IMG_5797.mp4",
     //"/photos/inicio/MacBook Ventiladores.mp4",
     //"/photos/inicio/Ben&Jerry2.mp4",
